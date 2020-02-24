@@ -1,0 +1,19 @@
+<!--miniprogram/pages/add/add.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section">
+    <input class="section__title" name="input" placeholder="标题（2-30字）" />
+  </view>
+ 
+  <view class="container" style="height:300px;">
+  <editor id="editor" class="section__content" placeholder="内容" bindstatuschange="onStatusChange" bindready="onEditorReady"><span></span>
+  </editor>
+</view>
+  <view class="section section_gap">
+    <view class="section__title_sl">今天心情怎么样</view>
+    <slider name="slider" show-value ></slider>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

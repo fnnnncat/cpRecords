@@ -14,46 +14,47 @@
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
   </view>
+  <!-- 日志表单 -->
+  <view class="uploader">
+    <view class="uploader-text">
+       <navigator class="btn-bottom" open-type="switchTab" url="../add/add" hover-class="navigator-hover" open-type="navigate" >
 
-
+    <icon class='./iconfont/iconxiugai:before ' size="30"/><text> 写日记</text>
+  </navigator>
+    </view>
+  </view>
+    <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <icon class='./iconfont/iconqueren:before ' size="30"/><text> 纪念日</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
   <!-- 上传图片 -->
   <view class="uploader">
     <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
+      <icon class='./iconfont/icongongdanguanlian:before ' size="30"/><text> 上传图片</text>
     </view>
     <view class="uploader-container" wx:if="{{imgUrl}}">
       <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
     </view>
   </view>
 
+<view class="btn-area">
+  <navigator class="btn-bottom" open-type="switchTab" url="../add/add?title=navigate" hover-class="navigator-hover">
 
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
+    <icon class='./iconfont/iconshouye:before ' size="30"/>
+  </navigator>
+  <navigator class="btn-bottom" url="../im/room/room" open-type="navigate" hover-class="navigator-hover">
+  <icon class='./iconfont/iconzuzhiguanli:before ' size="30"/>
     </navigator>
-  </view>
-
-  <!-- 即时通信 -->
-  <view class="uploader">
-    <navigator url="../im/im" open-type="navigate" class="uploader-text">
-      <text>即时通信 Demo</text>
+    <navigator class="btn-bottom" url="../databaseGuide/databaseGuide" open-type="navigate" hover-class="navigator-hover">
+    <icon class='./iconfont/icongongdan:before ' size="30"/>
     </navigator>
-  </view>
 
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
+     <navigator class="btn-bottom" url="../databaseGuide/databaseGuide" open-type="navigate" hover-class="navigator-hover">
+    <icon class='./iconfont/iconleibie:before ' size="30"/>
     </navigator>
-  </view>
-
-  <!-- 云调用 -->
-  <view class="uploader">
-    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
-      <text>云调用</text>
-    </navigator>
-  </view>
-
-
+</view>
 </view>

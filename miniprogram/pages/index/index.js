@@ -34,6 +34,10 @@ Page({
         }
       }
     })
+
+    this.setData({
+      title: options.title
+    })
   },
 
   onGetUserInfo: function(e) {
@@ -116,5 +120,5 @@ Page({
       }
     })
   },
-
+  
 })

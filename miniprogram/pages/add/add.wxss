@@ -1,0 +1,23 @@
+/* miniprogram/pages/add/add.wxss */
+.section__title{
+  border-bottom: solid 1px slategrey;
+  margin: 10px;
+  padding: 10px;
+}
+.section__content{
+  height: 300px;
+  padding:10px;
+  margin: 10px;
+}
+.section__title_sl{
+  color: slategray;
+}
+.btn-area{
+  display: flex;
+}
+.btn-area button{
+  flex-grow: 1;
+  margin: 20px;
+  color:brown;
+  background-color: darkgrey;
+}
